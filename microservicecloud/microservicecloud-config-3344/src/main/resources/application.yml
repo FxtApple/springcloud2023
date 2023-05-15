@@ -1,0 +1,19 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/FxtApple/microservicecloud-config.git    #github上面git仓库的名字
+          #用户名
+          username: FxtApple
+          #密码
+          password: Fxt15388684263
+          search-paths:
+            - microservicecloud-config
+      #default-label:master
+#skip-ssl-validation: true
